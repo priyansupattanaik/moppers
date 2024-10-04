@@ -6,6 +6,9 @@ import { servicesFooter } from "@/utils/services";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import mrcorporatefooterLogo from "@/assets/mrcorporate-footer-logo.png";
 import { posts } from "@/utils";
 
 export default function Footer2() {
@@ -15,21 +18,25 @@ export default function Footer2() {
         <div className="lg:main-container px-4">
           <div className=" grid grid-cols-1 md:grid-cols-4 gap-10">
             <div className="space-y-5">
-              <img src={footerLogo.src} className="w-40" alt="Moppers Logo" />
+              <img
+                src={mrcorporatefooterLogo.src}
+                className="w-40"
+                alt="Moppers Logo"
+              />
               <p className="text-gray-500">
-                We are a professional cleaning company founded in 1997,
-                providing leading commercial and residential cleaning solutions
-                in the U.S.
+                One Stop Solutions For All Your Facility Management Needs
               </p>
               <p className="text-gray-500">
-                Mail: info@moppers.com <br />
-                Call: +1 972 500 4545
+                Email us at:{" "}
+                <span className="text-blue-400">info@mrcorporate.in</span>
               </p>
 
-              <div className="flex gap-5 text-gray-500 [&>*]:transition-colors [&>*]:duration-300 [&>*]:cursor-pointer hover:[&>*]:text-white">
+              <div className="flex gap-3 text-gray-500 [&>*]:transition-colors [&>*]:duration-300 [&>*]:cursor-pointer hover:[&>*]:text-white">
+                Follow us:
                 <FacebookIcon />
                 <TwitterIcon />
-                <InstagramIcon />
+                <PinterestIcon />
+                <LinkedInIcon />
               </div>
             </div>
 

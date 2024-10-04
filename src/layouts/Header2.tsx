@@ -1,18 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import moppersLogo from "@/assets/moppers-logo.png";
+import mrLogo from "@/assets/mrcorporate-logo.png";
 import { navBar } from "@/utils/navbar";
 
 export default function Header2() {
   return (
-    <header className="w-auto h-auto lg:flex px-36 py-5 mx-auto justify-between hidden">
+    <header className="w-auto h-auto lg:flex py-5 main-container justify-between hidden">
       <div className="flex justify-between gap-10">
         <div>
-          <img
-            src={moppersLogo.src}
-            alt="Moppers Logo"
-            className="w-auto h-12"
-          />
+          <img src={mrLogo.src} alt="Moppers Logo" className="w-auto h-12" />
         </div>
         <div className="flex  items-center gap-5 font-sans font-semibold">
           {navBar.map((navItem) => (

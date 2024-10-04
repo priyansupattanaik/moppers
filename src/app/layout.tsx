@@ -8,6 +8,7 @@ import Header2 from "@/layouts/Header2";
 import Footer1 from "@/layouts/Footer1";
 import Footer2 from "@/layouts/Footer2";
 import ResponsiveHeader from "@/layouts/ResponsiveHeader";
+import Footer3 from "@/layouts/Footer3";
 
 export default function RootLayout({
   children,
@@ -23,7 +24,8 @@ export default function RootLayout({
         {children}
 
         <Footer1 />
-        <Footer2 />
+        {/* {<Footer2 />} */}
+        <Footer3 />
       </body>
     </html>
   );

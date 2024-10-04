@@ -2,6 +2,7 @@ import { blogSection } from "@/utils/blog";
 import React from "react";
 import Image from "next/image";
 import { servicesection } from "@/utils/services/index2";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export default function Ourservices() {
   return (
@@ -38,11 +39,13 @@ export default function Ourservices() {
                 {serv.title}
               </h3>
               <div className="flex items-center">
-                <div className="flex gap-2 items-center">
-                  <p className="text-gray-400 italic">Starting from</p>
-                  <p className="text-gray-500 text-sm font-semibold">
-                    {serv.price}
-                  </p>
+                <div className="space-y-5 gap-2 items-center">
+                  {/* <p className="text-gray-400 italic">Starting from</p> */}
+                  <p className="text-gray-500 text-sm">{serv.description}</p>
+                  <div className="flex items-center text-green-500 font-bold gap-3">
+                    Read more
+                    <ArrowForwardIcon />
+                  </div>
                 </div>
               </div>
             </div>

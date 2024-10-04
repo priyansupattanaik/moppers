@@ -1,9 +1,13 @@
-import Blog from "@/components/Home/Blog";
-import Breadcrumb from "@/components/Home/Breadcrumb";
-import Costcalculator from "@/components/Home/Costcalculator";
-import Organization from "@/components/Home/Organization";
-import Testimonial from "@/components/Home/Testimonial";
-import Whychooseus from "@/components/Home/Whychooseus";
+import Blog from "@/components/home/Blog";
+import Breadcrumb from "@/components/home/Breadcrumb";
+import Costcalculator from "@/components/home/Costcalculator";
+import FAQSection from "@/components/home/FAQSection";
+import Faq from "@/components/home/FAQSection";
+import Howwework from "@/components/home/Howwework";
+import Organization from "@/components/home/Organization";
+import Ourservices from "@/components/home/Ourservices";
+import Testimonial from "@/components/home/Testimonial";
+import Whychooseus from "@/components/home/Whychooseus";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,10 +15,13 @@ export default function Home() {
     <>
       <Breadcrumb />
       <Whychooseus />
-      <Testimonial />
-      <Organization />
+      <Ourservices />
+      <FAQSection />
+      {/* <Testimonial />
+      <Organization /> */}
+      <Howwework />
       <Costcalculator />
-      <Blog />
+      {/* <Blog /> */}
     </>
   );
 }

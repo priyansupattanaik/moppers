@@ -17,16 +17,21 @@ export const navBar: navBarType[] = [
   },
   {
     id: 4,
+    title: "career",
+    path: "/career",
+  },
+  {
+    id: 5,
     title: "pricing",
     path: "/pricing",
   },
   {
-    id: 5,
+    id: 6,
     title: "blog",
     path: "/blog",
   },
   {
-    id: 6,
+    id: 7,
     title: "contact",
     path: "/contact",
   },

@@ -3,28 +3,28 @@ import mopperImg from "@/assets/mopper-features.jpg";
 import wipingHand from "@/assets/wiping-gloves-black-pair.png";
 
 export default function WhyChooseUs() {
-  const benefits = [
-    {
-      title: "Experienced Staff",
-      description:
-        "Professional and experienced staff ready to help you anytime.",
-    },
-    {
-      title: "Natural Product",
-      description:
-        "We only use natural products in the process. No harmful chemicals are used.",
-    },
-    {
-      title: "Fast Service",
-      description:
-        "Set your schedule and get the regular and faster cleaning every day.",
-    },
-    {
-      title: "Best Equipment",
-      description:
-        "We use the best and world-class equipment for the cleaning process.",
-    },
-  ];
+  // const benefits = [
+  //   {
+  //     title: "Experienced Staff",
+  //     description:
+  //       "Professional and experienced staff ready to help you anytime.",
+  //   },
+  //   {
+  //     title: "Natural Product",
+  //     description:
+  //       "We only use natural products in the process. No harmful chemicals are used.",
+  //   },
+  //   {
+  //     title: "Fast Service",
+  //     description:
+  //       "Set your schedule and get the regular and faster cleaning every day.",
+  //   },
+  //   {
+  //     title: "Best Equipment",
+  //     description:
+  //       "We use the best and world-class equipment for the cleaning process.",
+  //   },
+  // ];
 
   return (
     <div className="lg:main-container px-4 w-full py-10 flex flex-col lg:flex-row items-center gap-10">
@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
         <img
           src={mopperImg.src}
           alt="Mopper Features"
-          className="w-full h-full rounded-lg"
+          className="w-fit h-[90vh] rounded-lg"
         />
       </div>
 
@@ -40,22 +40,30 @@ export default function WhyChooseUs() {
         <div className="space-y-5 px-5">
           <div className="flex items-center gap-5 uppercase font-semibold text-sm">
             <span className="h-px w-12 bg-[#667487]"></span>
-            <h1 className="text-[#001837]">Why Choose Us</h1>
+            {/* <h1 className="text-[#001837]">Why Choose Us</h1> */}
+            <h1 className="text-[#001837]">About Us</h1>
           </div>
-          <h2 className="text-4xl font-semibold text-[#001837]">
+          {/* <h2 className="text-4xl font-semibold text-[#001837]">
             Amazing Benefits with Us
+          </h2> */}
+          <h2 className="text-6xl font-bold text-[#001837]">
+            Elevating Corporate Environments Through
+            <br /> Professional Cleaning
+            <br /> Solutions.
           </h2>
-          <p className="text-[#565656]">
-            Shall under in yielding saying given dominion don't of two god which
-            said. Creature dominion was the good creepeth to give bring doesn't
-            first shall two signs is a gathered set of people.
+          <p className="text-[#565656] text-xl">
+            MR Corporate Facilities Services is an independent leader in
+            delivering integrated facilities management services across India.
+            For more than 12 years, MR Corporate is well acknowledged for
+            providing quality services to some of the biggest regional names,
+            including leading multinationals in the region.
           </p>
           <button className="text-[#6F8BF8] underline">
             Book a Service Now
           </button>
         </div>
 
-        <div className="h-px w-full lg:bg-[#EEEEEE]" />
+        {/* <div className="h-px w-full lg:bg-[#EEEEEE]" />
 
         <div className=" grid grid-cols-1 lg:grid-cols-2 gap-6 ">
           {benefits.map((item, index) => (
@@ -74,7 +82,7 @@ export default function WhyChooseUs() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

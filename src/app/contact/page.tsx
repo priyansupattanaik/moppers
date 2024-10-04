@@ -1,7 +1,8 @@
-import Breadcrumb from "@/components/Contact/Breadcrumb";
-import Helpcenter from "@/components/Contact/Helpcenter";
-import Map from "@/components/Contact/Map";
-import Offices from "@/components/Contact/Offices";
+import Breadcrumb from "@/components/contact/Breadcrumb";
+import Details from "@/components/contact/Details";
+import Helpcenter from "@/components/contact/Helpcenter";
+import Map from "@/components/contact/Map";
+import Offices from "@/components/contact/Offices";
 
 import React from "react";
 
@@ -10,6 +11,7 @@ export default function page() {
     <>
       <Breadcrumb />
       <Offices />
+      <Details />
       <Helpcenter />
       <Map />
     </>

@@ -21,7 +21,7 @@ export default function ResponsiveHeader() {
 
   return (
     <header className="lg:hidden">
-      <header className="bg-white w-full flex items-center px-4 justify-between lg:hidden h-28 fixed top-0 left-0 right-0 z-50">
+      <header className="bg-white w-full flex items-center px-4 justify-between lg:hidden h-20 fixed top-0 left-0 right-0 z-50">
         <div>
           <img src={moppersLogo.src} alt="Moppers Logo" className="w-44" />
         </div>

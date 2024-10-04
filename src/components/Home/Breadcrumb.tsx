@@ -5,7 +5,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export default function Breadcrumb() {
   return (
-    <section className="relative w-full h-[900px] lg:h-[600px] overflow-hidden">
+    <section className="relative w-full h-[700px] lg:h-[600px] overflow-hidden">
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src={bgImage}
@@ -13,35 +14,40 @@ export default function Breadcrumb() {
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="z-0"
+          priority={true} // ensures optimized image loading
         />
       </div>
 
+      {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950 to-transparent opacity-90 z-10"></div>
 
-      <div className="relative z-20 w-full lg:main-container flex flex-col lg:flex-row justify-center lg:justify-between items-center px-4 lg:space-y-10 inset-0 h-full">
+      {/* Content Wrapper */}
+      <div className="relative z-20 w-full lg:main-container flex flex-col lg:flex-row justify-center lg:justify-between items-center px-4 h-full">
+        {/* Left Section (Text) */}
         <div className="text-white space-y-4 lg:space-y-8 max-w-lg lg:text-left">
-          <div className=" flex uppercase items-center lg:justify-start gap-2 font-semibold text-xs">
-            <span className="h-px w-12 bg-gray-400"></span>
-            Need professional cleaning?
+          <div className="text-lg font-semibold flex justify-center lg:justify-start items-center gap-2">
+            Welcome to MR Corporate
           </div>
 
-          <div className="text-2xl md:text-4xl lg:text-5xl font-light leading-tight">
-            Hire us for amazing <br />
-            <span className="font-semibold">cleaning services</span> for
-            <br />
-            <span className="font-semibold">home</span> &{" "}
-            <span className="font-semibold">offices.</span>
-          </div>
+          <h1 className="text-2xl font-semibold md:text-4xl lg:text-5xl leading-relaxed">
+            Professional Facility Management <br />
+            Solutions
+          </h1>
+
+          <p className="text-sm lg:text-base font-light opacity-80">
+            Top-notch, quality facility management solutions to government &
+            private sectors across various domains.
+          </p>
 
           <button className="flex justify-center lg:justify-start items-center gap-3 md:gap-5 bg-yellow-600 text-white uppercase text-xs font-bold px-6 py-3 rounded hover:-translate-y-1 transition-transform duration-300">
-            Explore Our Services
+            Contact Us
             <ArrowForwardIcon className="text-lg text-white" />
           </button>
         </div>
 
-        <div className="bg-white shadow-lg w-full lg:w-1/3 rounded-lg p-6 md:p-10  space-y-6">
-          <h1 className="text-black font-semibold text-center text-lg ">
+        {/* Right Section (Form) */}
+        <div className="bg-white shadow-lg w-full lg:w-1/3 rounded-lg p-6 md:p-8 lg:p-10 space-y-6 mt-8 lg:mt-0">
+          <h1 className="text-black font-semibold text-center text-lg md:text-xl">
             Book a Service
           </h1>
 
@@ -57,7 +63,7 @@ export default function Breadcrumb() {
                 <input
                   id="name"
                   type="text"
-                  className="block text-sm md:text-base bg-[#F7F7F7] w-full p-2 md:p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
+                  className="block text-sm md:text-base bg-gray-100 w-full p-2 md:p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
                   placeholder="Enter Full Name"
                   required
                 />
@@ -73,7 +79,7 @@ export default function Breadcrumb() {
                 <input
                   id="phone"
                   type="tel"
-                  className="block text-sm md:text-base bg-[#F7F7F7] w-full p-2 md:p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
+                  className="block text-sm md:text-base bg-gray-100 w-full p-2 md:p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
                   placeholder="+1 ( ___ ) ___ - ___ - ____"
                   required
                 />
@@ -88,7 +94,7 @@ export default function Breadcrumb() {
                 </label>
                 <select
                   id="service"
-                  className="block text-sm md:text-base bg-[#F7F7F7] w-full p-2 md:p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
+                  className="block text-sm md:text-base bg-gray-100 w-full p-2 md:p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
                   required
                 >
                   <option>Residential Cleaning</option>

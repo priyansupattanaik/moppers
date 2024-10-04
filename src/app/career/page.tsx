@@ -1,5 +1,5 @@
-import Breadcrumb from "@/components/blog/Breadcrumb";
-import Herosection from "@/components/blog/Herosection";
+import Breadcrumb from "@/components/career/Breadcrumb";
+import Herosection from "@/components/career/Herosection";
 import React from "react";
 
 export default function page() {

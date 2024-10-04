@@ -1,6 +1,6 @@
-import Testimonial from "@/components/Home/Testimonial";
-import Breadcrumb from "@/components/Pricing/Breadcrumb";
-import Plans from "@/components/Pricing/Plans";
+import Testimonial from "@/components/home/Testimonial";
+import Breadcrumb from "@/components/pricing/Breadcrumb";
+import Plans from "@/components/pricing/Plans";
 
 import React from "react";
 
